@@ -2,11 +2,13 @@ import "./App.css";
 
 // Components
 import Header from "./components/header/header";
+import SideMenu from "./components/sideMenu/sideMenu";
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <Header />
+      <SideMenu />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -1,0 +1,14 @@
+.floatingMenu__container {
+  position: absolute;
+  border: 2px solid var(--color1);
+  padding: 0.5rem;
+  top: calc(100% + 30px);
+  min-width: 100px;
+}
+
+.floatingMenu__container-list {
+  list-style: none;
+}
+
+.floatingMenu__container-list-item {
+}

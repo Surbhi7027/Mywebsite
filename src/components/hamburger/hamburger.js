@@ -1,3 +1,10 @@
+import "./hamburger.css";
 export default function Hamburger() {
-  return <h1 className="show__WhenIpad">ham</h1>;
+  return (
+    <div className="hamburger__container show__WhenIpad">
+      <div className="hamburger__icon-line"></div>
+      <div className="hamburger__icon-line"></div>
+      <div className="hamburger__icon-line"></div>
+    </div>
+  );
 }
