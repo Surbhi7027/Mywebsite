@@ -1,0 +1,42 @@
+.homePage__section-text {
+  flex: 1;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5rem;
+}
+
+.homePage__section-text__title {
+  font-size: 2rem;
+}
+.homePage__section-text__title-helloIcon {
+  display: inline-block;
+  cursor: auto;
+}
+.homePage__section-text:hover .homePage__section-text__title-helloIcon {
+  animation: sayHello 1s ease-in-out 1 normal forwards;
+  transform-origin: bottom right;
+}
+
+.homePage__section-blob {
+  flex: 1;
+}
+
+@keyframes sayHello {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(40deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

@@ -3,13 +3,17 @@ import "./App.css";
 // Components
 import Header from "./components/header/header";
 import SideMenu from "./components/sideMenu/sideMenu";
+import ContactPage from "./pages/contact/contact";
+import HomePage from "./pages/home/home";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
-      <SideMenu />
-      {/* <header className="App-header">
+      <div className="App">
+        <HomePage />
+        <ContactPage />
+        {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -23,7 +27,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-    </div>
+      </div>
+      <SideMenu />
+    </>
   );
 }
 
