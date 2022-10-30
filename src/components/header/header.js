@@ -12,8 +12,8 @@ export default function Header() {
       <nav className="header__midSection">
         <ul className="navbar hide__WhenIpad">
           <li className="active">Home</li>
-          <li>Contact</li>
-          <li>Projects</li>
+          {/* <li>Contact</li>
+          <li>Projects</li> */}
         </ul>
         {/* <a className="btn_callToAction show__WhenIpad" href="#contact__page">
           Let's Talk

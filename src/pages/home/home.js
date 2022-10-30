@@ -2,9 +2,14 @@ import "./home.css";
 
 import Blob from "../../components/blob/blob";
 
-export default function HomePage() {
+export default function HomePage(props) {
   return (
-    <section className="homePage page__section">
+    <section
+      className="homePage page__section"
+      style={{
+        color: props.isDarkMode ? "red !important" : "blue !important",
+      }}
+    >
       <main className="homePage__section-text">
         <h1 className="homePage__section-text__title">
           Hi <span className="homePage__section-text__title-helloIcon">👋</span>

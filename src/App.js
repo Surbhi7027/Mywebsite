@@ -1,18 +1,27 @@
+import { useState } from "react";
+
 import "./App.css";
 
 // Components
 import Header from "./components/header/header";
 import SideMenu from "./components/sideMenu/sideMenu";
-import ContactPage from "./pages/contact/contact";
+// import ContactPage from "./pages/contact/contact";
 import HomePage from "./pages/home/home";
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    if (isDarkMode) setIsDarkMode(false);
+    else setIsDarkMode(true);
+  };
+
   return (
     <>
       <Header />
       <div className="App">
-        <HomePage />
-        <ContactPage />
+        <HomePage isDarkMode={isDarkMode} />
+        {/* <ContactPage /> */}
         {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -28,7 +37,7 @@ function App() {
         </a>
       </header> */}
       </div>
-      <SideMenu />
+      <SideMenu isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
     </>
   );
 }
